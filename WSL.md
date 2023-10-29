@@ -16,7 +16,7 @@ Permite ejecutar un entorno de GNU/Linux directamente dentro de Windows.
 ## Segundo paso
 - Abrir un cmd como administrador.
 - Ejecutar el siguiente comando:
-  - wsl --install
+  - wsl --install -d Ubuntu
 - Esperar a que instale.
 - Colocar nombre y contraseña (la última es escritura ciega).
 
