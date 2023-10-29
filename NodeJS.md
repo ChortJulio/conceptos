@@ -40,6 +40,7 @@
     ```bash
     curl -fsSL https://fnm.vercel.app/install | bash
     ```
+  - Si me faltan algunas de las dependencias, buscar en internet e instalarlas.
   - Aplicar los cambios que me pide para instalar fnm: 
     ```bash
     source /home/julioch/.bashrc
