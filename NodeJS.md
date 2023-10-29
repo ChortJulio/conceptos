@@ -29,7 +29,9 @@
 - Puedo dockerizar todos mis proyectos.
 - Utilizar administrador de versiones de node (nvm).
 - Utilizar alternativa a nvm llamada fnm. Para hacer esto necesito previamente tener instalado 'Rust lang'. Cuento a continuación los pasos que tengo que hacer para instalarlo (es un problema de windows, si uso linux o mac puedo utilizar sin drama npm):
-  - a 
+  - Habilitar e instalar WSL (ver WSL.md)
+  - Ejecutar el siguiente comando en consola: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+  - Instalar fnm con el siguiente comando: curl -fsSL https://fnm.vercel.app/install | bash
 
 
 
