@@ -1,5 +1,7 @@
-# NodeJS (midudev)
-### https://www.youtube.com/watch?v=yB4n_K7dZV8&list=PLUofhDIg_38qm2oPOV-IRTTEKyrVBBaU7
+# `NodeJS (midudev)`
+> Resumen de NodeJS del video de midudev
+
+**Curso de NodeJS de midudev en este [link](https://www.youtube.com/watch?v=yB4n_K7dZV8&list=PLUofhDIg_38qm2oPOV-IRTTEKyrVBBaU7)**
 
 ## ¿Qué es?
 
@@ -30,8 +32,45 @@
 - Utilizar administrador de versiones de node (nvm).
 - Utilizar alternativa a nvm llamada fnm. Para hacer esto necesito previamente tener instalado 'Rust lang'. Cuento a continuación los pasos que tengo que hacer para instalarlo (es un problema de windows, si uso linux o mac puedo utilizar sin drama npm):
   - Habilitar e instalar WSL (ver WSL.md)
-  - Ejecutar el siguiente comando en consola: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-  - Instalar fnm con el siguiente comando: curl -fsSL https://fnm.vercel.app/install | bash
+  - Ejecutar el siguiente comando en consola: 
+    ```bash
+    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+    ```
+  - Instalar fnm con el siguiente comando: 
+    ```bash
+    curl -fsSL https://fnm.vercel.app/install | bash
+    ```
+  - Aplicar los cambios que me pide para instalar fnm: 
+    ```bash
+    source /home/julioch/.bashrc
+    ```
+  - Por último, chequear que todo se instaló bien: 
+    ```bash
+    fnm --version
+    ```
+
+## FNM (Comandos)
+- Listar todas las versiones de NodeJS instaladas:
+    ```bash
+    fnm ls
+    ```
+- Instalar una versión en particular:
+    ```bash
+    fnm install <nro_version>
+    ```
+- Utilizar una versión en particular:
+    ```bash
+    fnm user <nro_version>
+    ```
+- Para asegurarme que uso la versión correcta, ejecuto el siguiente comando:
+    ```bash
+    npm --version
+    ```
+- Para dejar una por defecto, es decir, siempre que abra una consola me aparezca esta versión de node:
+    ```bash
+    fnm alias <nro_version> default
+    ```
+
 
 
 
